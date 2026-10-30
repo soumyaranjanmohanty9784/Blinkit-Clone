@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Blinkit - Online Grocery</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#f7f7f7] text-gray-800">
+    <script src="./js/navbar.js"></script>
+
+<!-- NAVBAR SECTION -->
+<!-- MAIN SECTION -->
+
+    <main class="max-w-7xl mx-auto px-4 lg:px-6 py-6">
+
+
+<!-- HERO SECTION -->
+
+        <section
+            class="bg-gradient-to-r from-yellow-300 to-yellow-100 rounded-3xl overflow-hidden"
+        >
+
+            <div class="grid md:grid-cols-2 items-center">
+
+<!-- LEFT CONTENT -->
+
+                <div class="p-8 md:p-12">
+
+                    <span class="inline-block bg-green-600 text-white text-xs font-bold px-3 py-1.5 rounded-full mb-4">
+                        ⚡ FAST DELIVERY
+                    </span>
+
+                    <h2 class="text-4xl md:text-5xl font-extrabold leading-tight text-gray-900">
+
+                        Groceries delivered
+                        <span class="text-green-600">
+                            in minutes
+                        </span>
+
+                    </h2>
+
+                    <p class="mt-4 text-gray-600 max-w-md">
+                        Fresh fruits, vegetables, groceries and daily
+                        essentials delivered directly to your doorstep.
+                    </p>
+
+                    <button onclick="document.getElementById('categoryContainer').scrollIntoView({behavior:'smooth'})" class="mt-7 bg-green-600 hover:bg-green-700 text-white px-7 py-3.5 rounded-xl font-bold">
+                        Shop Now →
+                    </button>
+
+                </div>
+
+
+<!-- RIGHT DESIGN -->
+
+                <div class="hidden md:flex justify-center items-center p-20">
+
+                    <div class="text-[150px]">
+                        🛒
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+<!-- CATEGORY SECTION -->
+
+<section class="mt-10">
+
+    <div class="flex items-center justify-between mb-5">
+
+        <h2 class="text-2xl font-bold">
+            Shop by Category
+        </h2>
+
+        <button class="text-green-600 font-semibold">
+            View All →
+        </button>
+
+    </div>
+
+
+    <!-- Categories Items -->
+
+    <div
+        id="categoryContainer"
+        class="grid grid-cols-3 sm:grid-cols-4
+               md:grid-cols-6 lg:grid-cols-8 gap-4">
+    </div>
+
+</section>
+
+
+
+<!-- OFFER BANNER -->
+
+        <section class="mt-10">
+
+            <h2 class="text-2xl font-bold mb-5">
+                Best Offers
+            </h2>
+
+
+            <div class="grid md:grid-cols-3 gap-5">
+
+
+                <!-- OFFER 1 -->
+
+                <div class="bg-green-100 rounded-2xl p-6 flex justify-between items-center">
+
+                    <div>
+
+                        <p class="text-green-700 font-bold text-sm">
+                            WEEKEND OFFER
+                        </p>
+
+                        <h3 class="text-2xl font-extrabold mt-2">
+                            Up to 40% OFF
+                        </h3>
+
+                        <p class="text-sm text-gray-600 mt-1">
+                            On fresh vegetables
+                        </p>
+
+                        <button onclick="location.href='./category.html?category=vegetables'" class="mt-4 bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-semibold">
+                            Shop Now
+                        </button>
+
+                    </div>
+
+                    <div class="text-6xl">
+                        🥦
+                    </div>
+
+                </div>
+
+
+<!-- OFFER 2 -->
+
+                <div class="bg-orange-100 rounded-2xl p-6 flex justify-between items-center">
+
+                    <div>
+
+                        <p class="text-orange-700 font-bold text-sm">
+                            SPECIAL DEAL
+                        </p>
+
+                        <h3 class="text-2xl font-extrabold mt-2">
+                            Buy 1 Get 1
+                        </h3>
+
+                        <p class="text-sm text-gray-600 mt-1">
+                            On selected snacks
+                        </p>
+
+                        <button onclick="location.href='./category.html?category=snacks'" class="mt-4 bg-orange-500 text-white px-4 py-2 rounded-lg text-sm font-semibold">
+                            Explore
+                        </button>
+
+                    </div>
+
+                    <div class="text-6xl">
+                        🍪
+                    </div>
+
+                </div>
+
+
+<!-- OFFER 3 -->
+
+                <div class="bg-blue-100 rounded-2xl p-6 flex justify-between items-center">
+
+                    <div>
+
+                        <p class="text-blue-700 font-bold text-sm">
+                            NEW USERS
+                        </p>
+
+                        <h3 class="text-2xl font-extrabold mt-2">
+                            ₹100 OFF
+                        </h3>
+
+                        <p class="text-sm text-gray-600 mt-1">
+                            On your first order
+                        </p>
+
+                        <button onclick="location.href='./category.html?category=fruits'" class="mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold">
+                            Get Offer
+                        </button>
+
+                    </div>
+
+                    <div class="text-6xl">
+                        🎁
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+     <!-- WHY CHOOSE US -->
+
+        <section class="mt-12 bg-white rounded-3xl p-8">
+
+            <h2 class="text-2xl font-bold text-center">
+                Why Choose blinkit?
+            </h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-8">
+
+
+                <div class="text-center">
+
+                    <div class="text-4xl">
+                        ⚡
+                    </div>
+
+                    <h3 class="font-bold mt-3">
+                        Super Fast
+                    </h3>
+
+                    <p class="text-sm text-gray-500 mt-1">
+                        Get your groceries delivered quickly.
+                    </p>
+
+                </div>
+
+
+                <div class="text-center">
+
+                    <div class="text-4xl">
+                        🥬
+                    </div>
+
+                    <h3 class="font-bold mt-3">
+                        Fresh Products
+                    </h3>
+
+                    <p class="text-sm text-gray-500 mt-1">
+                        Quality products at your doorstep.
+                    </p>
+
+                </div>
+
+
+                <div class="text-center">
+
+                    <div class="text-4xl">
+                        💰
+                    </div>
+
+                    <h3 class="font-bold mt-3">
+                        Best Prices
+                    </h3>
+
+                    <p class="text-sm text-gray-500 mt-1">
+                        Great products at affordable prices.
+                    </p>
+
+                </div>
+
+
+                <div class="text-center">
+
+                    <div class="text-4xl">
+                        🔒
+                    </div>
+
+                    <h3 class="font-bold mt-3">
+                        Secure Shopping
+                    </h3>
+
+                    <p class="text-sm text-gray-500 mt-1">
+                        Your information stays protected.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+<!-- FOOTER SECTION -->
+
+    <footer class="bg-gray-900 text-white mt-14">
+
+        <div class="max-w-7xl mx-auto px-6 py-12">
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+
+
+                <div>
+
+                    <h2 class="text-2xl font-extrabold">
+                        <span class="text-yellow-400">blink</span><span class="text-green-400">it</span>
+                    </h2>
+
+                    <p class="text-gray-400 text-sm mt-3">
+                        Your everyday grocery shopping,
+                        delivered quickly to your doorstep.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <h3 class="font-bold mb-4">
+                        Company
+                    </h3>
+
+                    <ul class="space-y-2 text-sm text-gray-400">
+
+                        <li>About Us</li>
+                        <li>Careers</li>
+                        <li>Contact Us</li>
+                        <li>Press</li>
+
+                    </ul>
+
+                </div>
+
+
+                <div>
+
+                    <h3 class="font-bold mb-4">
+                        Help
+                    </h3>
+
+                    <ul class="space-y-2 text-sm text-gray-400">
+
+                        <li>FAQ</li>
+                        <li>Terms & Conditions</li>
+                        <li>Privacy Policy</li>
+                        <li>Refund Policy</li>
+
+                    </ul>
+
+                </div>
+
+
+                <div>
+
+                    <h3 class="font-bold mb-4">
+                        Download App
+                    </h3>
+
+                    <p class="text-gray-400 text-sm mb-4">
+                        Get the blinkit app
+                    </p>
+
+                    <button class="bg-white text-black px-5 py-2 rounded-lg text-sm font-semibold">
+                        ▶ Google Play
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-500 text-sm">
+
+                © 2026 blinkit. All rights reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+    <script src="./js/category.js"></script>
+    <script src="./js/account.js"></script>
+
+</body>
+</html>
